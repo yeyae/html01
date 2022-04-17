@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>글자 태그 실습</title>
+</head>
+<br>
+    <h1>첫 번째 제목 글자 태그</h1>
+    <hr/>
+    <h2>두 번째 제목 글자 태그</h2>
+    <br/> <!-- 개행 태그 -->
+    <h3>세 번째 제목 글자 태그</h3>
+
+    <p>
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+    </p>
+    <p>
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+    </p>
+    
+    <a href="https://www.naver.com">naver</a> <!--앵커 태그-->
+    <a href="https://www.github.com">깃허브</a>
+    <a href="#">이동하지 않음</a>
+    <!-- a 태그를 이용해서 페이지 내부이동 -->
+    <!-- 이동을 원하는 장소(태그) 에 속성 id를 준다.-->
+    <a href="#alpha">move to alpha</a>
+    <a href="#beta">move to beta</a>
+    <a href="#gamma">move to gamma</a>
+    <h1 id="alpha">Alpha</h1>
+    <p>
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+    </p>
+    <h1 id="beta">Beta</h1>
+    <p>
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+    </p>
+    <h1 id="gamma">Gamma</h1>
+    <p>
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+    </p>
+
+    <!-- 글자 형태 태그 -->
+    <b>굵은 글자 태그</b>
+    <br/>
+    <i>기울어진 글자 태그</i>
+    <br/>
+    <small>작은 글자 태그</small>
+    <br/>
+    <sub>아래에 달라붙는 글자 태그</sub><br/>
+    <sup>위에 달라붙는 글자 태그</sup><br/>
+    <ins>밑줄 글자 태그</ins><br/>
+    <del>가운데 줄이 그어진 글자 태그</del><br/>
+
+    <!-- 루비 문자-->
+    <br/>
+    <ruby>
+        <span>大韓民國</span> <!-- 밑에 위치할 글자-->
+        <rt>대한민국</rt> <!-- span 태그 위에 위치할 글자-->
+    </ruby>
+
+    <!-- 목록 태그 (리스트)-->
+    <ul> <!-- 순서가 없는 unordered 목록-->
+        <li>Facebook</li> <!-- 목록의 요소 -->
+        <li>Twitter</li>
+        <li>Instagram</li>
+    </ul>
+    <ol> <!-- 순서가 있는 ordered 목록-->
+        <li>Facebook</li>
+        <li>Twitter</li>
+        <li>Instagram</li>
+    </ol>
+
+    <ul>
+        <li>HTML5
+            <ol> <!-- 순서가 있는 ordered 목록-->
+                <li>Facebook</li>
+                <li>Twitter</li>
+                <li>Instagram</li>
+            </ol>
+        </li>
+        <li>CSS3
+            <ol> <!-- 순서가 있는 ordered 목록-->
+                <li>Facebook</li>
+                <li>Twitter</li>
+                <li>Instagram</li>
+            </ol>
+        </li>
+    </ul>
+
+    <!-- 정의 목록 definition list-->
+    <dl>
+        <dt>SNS</dt> <!-- 정의를 설명할 용어 태그-->
+        <dd>Facebook</dd> <!--용어의 실제 정의를 설명하는 태그-->
+        <dd>Twitter</dd>
+        <dd>Instagram</dd>
+    </dl>
+
+    <!-- 테이블 태그 -->
+    <!-- 표를 만들 때 사용하는 태그-->
+    <table border="1"> <!-- border 속성은 테이블의 두께-->
+        <tr style="background: yellow;">
+            <th>HEADER 1</th> <!-- 테이블의 헤더 (강조) table header-->
+            <th>HEADER 2</th>
+        </tr>
+        <tr> <!-- TABLE ROW -->
+            <td>DATA 1</td> <!-- 테이블의 데이터 table data-->
+            <td>DATA 1</td>
+        </tr>
+        <tr>
+            <td>DATA 2</td>
+            <td>DATA 2</td>
+        </tr>
+    </table>
+
+    <table border="1">
+        <tr>
+            <th colspan="3">TABLE HEADER</th>
+            <th rowspan="3">TABLE HEADER</th>
+        </tr>
+        <tr>
+            <td>TABLE DATA</td>
+            <td rowspan="2">TABLE DATA</td>
+            <td>TABLE DATA</td>
+        </tr>
+        <tr>
+            <td>TABLE DATA</td>
+            <td>TABLE DATA</td>
+        </tr>
+    </table>
+
+    <!-- 이미지 태그 -->
+    <img src="IU.jpg" alt="src 경로에 이미지가 없을 경우" width="200" height="200" />
+
+</body>
+</html>

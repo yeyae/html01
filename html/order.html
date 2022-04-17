@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>주문서</title>
+  </head>
+  <body>
+    <div id="space1">
+      <h1>상품주문서</h1>
+      <form>
+        <fieldset>
+          <legend>개인정보</legend>
+          <ul>
+            <li>
+              <label for="name">이름</label>
+              <input type="text" id="name" required />
+            </li>
+            <li>
+              <label for="contact">연락처</label>
+              <input type="text" id="contact" />
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset>
+          <legend>배송지 정보</legend>
+          <ul>
+            <li>
+              <label for="addr">주소</label>
+              <input type="text" id="addr" />
+            </li>
+            <li>
+              <label for="phone">전화번호</label>
+              <input type="text" id="phone" />
+            </li>
+            <li>
+              <label>메모</label>
+              <textarea rows="3" cols="40" name="memo"></textarea>
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset>
+          <legend>주문정보</legend>
+          <ul>
+            <li>
+              <label for="ame">아메리카노</label>
+              <!-- .. 상위폴더로 이동-->
+              <img src="../img/아메리카노.jfif" />
+              <input type="checkbox" id="ame" name="coffee" value="c1" />
+            </li>
+            <li>
+              <label for="latte">카페라떼</label>
+							<img src="img/카페라떼.jfif" />
+              <input type="checkbox" id="latte" name="coffee" value="c2" />
+            </li>
+            <li>
+              <label for="cold">콜드브루</label>
+							<img src="img/콜드브루.jfif" />
+              <input type="checkbox" id="cold" name="coffee" value="c3" />
+            </li>
+            <li>
+              <label for="va">바닐라라떼</label>
+							<img src="img/바닐라라떼.jfif" />
+              <input type="checkbox" id="va" name="coffee" value="c4" />
+            </li>
+          </ul>
+        </fieldset>
+
+        <input type="submit" value="주문" />
+        <input type="reset" value="다시작성" />
+        <!--개인정보-->
+        <!--이름-->
+        <!--연락처-->
+        <!--배송지정보 : 주소, 전화번호 , 메모(요청사항) textarea-->
+        <!--주문정보 중복 선택가능하도록 상품들을 구성
+             아메리카노, 카페라떼, 콜드브루, 바닐라라떼, 
+             넣고싶으면 이미지 같이 넣어보기(선택)
+            -->
+      </form>
+    </div>
+  </body>
+</html>

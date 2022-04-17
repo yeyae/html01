@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<style>
+    /* 후손 선택자 
+    선택자a 선택자b : 선택자a 의 후손인 선택자b */
+    /* 몇단계 아래에있던 상관 x */
+
+    /* 자손 선택자
+    선택자a 선택자b : 선택자a 의 자손인 선택자b */
+    /* 바로 아래 단계만 적용 */
+    #header > h1 {
+        color: red;
+    }
+
+    #section h1 {
+        color: orange;
+    }
+</style>
+<body>
+    <div id="header">
+        <h1 class="title">title</h1>
+        <h1 class="title">title</h1>
+        <div id="nav">
+            <h1>navigation</h1>
+        </div>
+    </div>
+    <div id="section">
+        <h1 class="title">title2</h1>
+        <p>기사 내용 .... 어쩌구 저쩌구</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+      } /* * : 전체 선택자, html안에있는 모든 요소를 선택 */
+
+      h1,
+      p {
+        color: blue;
+      } /* 태그 선택자는 원하는 태그의 이름을 입력 */
+
+      #myid {
+        color: red;
+      }
+      /* 웹 표준에서 id속성은 중복되면 안된다. id선택자는 특정한 하나의 태그를
+      선택할때 사용합니다.
+      id 선택자 => #id이름 */
+
+      .myclass {
+        color: green;
+      }
+      /* 클래스 선택자 : 특정한 클래스를 가지고 있는 태그를 선택할때 사용한다.
+      class 선택자 => .class이름*/
+
+      input[type="text"] {
+        background-color: aqua;
+      }
+      /* 속성 선택자 : 특정 속성을 가진 태그를 선택할때 사용한다. 
+      속성 선택자 => 선택자[속성=값]
+      */
+      #input2 {
+        background-color: darkgoldenrod;
+      }
+
+      .type2 {
+        background-color: brown;
+        color: white;
+      }
+      /* 선택자 우선 순위 : 클래스 < 아이디 */
+
+      /* 후손 선택자, 자손 선택자
+        바로 한단계 아래 태크 : 자손
+        그 밑까지 전부 포함 : 후손
+      */
+    </style>
+  </head>
+  <body>
+    <input type="text" />
+    <input type="text" class="type2" id="input2" />
+    <h1 id="myid">HELLO CSS!</h1>
+    <p class="myclass">myclass</p>
+    <p class="myclass">
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+      Lorem Ipsum has been the industry's standard dummy text ever since the
+      1500s, when an unknown printer took a galley of type and scrambled it to
+      make a type specimen book. It has survived not only five centuries, but
+      also the leap into electronic typesetting, remaining essentially
+      unchanged. It was popularised in the 1960s with the release of Letraset
+      sheets containing Lorem Ipsum passages, and more recently with desktop
+      publishing software like Aldus PageMaker including versions of Lorem
+      Ipsum.
+    </p>
+    <ul>
+        <li>
+            자손
+        </li>
+    </ul>
+  </body>
+</html>
